@@ -1,0 +1,148 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>IconFont</title>
+    <link rel="stylesheet" href="demo.css">
+    <link rel="stylesheet" href="iconfont.css">
+</head>
+<body>
+    <div class="main markdown">
+        <h1>IconFont 图标</h1>
+        <ul class="icon_lists clear">
+            
+                <li>
+                <i class="icon iconfont icon-jiaoyiloudou"></i>
+                    <div class="name">交易漏斗</div>
+                    <div class="fontclass">.icon-jiaoyiloudou</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-duihuaqipao"></i>
+                    <div class="name">对话气泡</div>
+                    <div class="fontclass">.icon-duihuaqipao</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-guojia"></i>
+                    <div class="name">国家</div>
+                    <div class="fontclass">.icon-guojia</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-guojiapitchon"></i>
+                    <div class="name">国家（pitch on）</div>
+                    <div class="fontclass">.icon-guojiapitchon</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-tianqi"></i>
+                    <div class="name">天气</div>
+                    <div class="fontclass">.icon-tianqi</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-tianqitubiao_qingtianbai"></i>
+                    <div class="name">天气图标 晴多云(白天)</div>
+                    <div class="fontclass">.icon-tianqitubiao_qingtianbai</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-dashujucunchu"></i>
+                    <div class="name">大数据存储</div>
+                    <div class="fontclass">.icon-dashujucunchu</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-nationaarea"></i>
+                    <div class="name">国家/地区</div>
+                    <div class="fontclass">.icon-nationaarea</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-map__easyicon"></i>
+                    <div class="name">地图</div>
+                    <div class="fontclass">.icon-map__easyicon</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-leidatu"></i>
+                    <div class="name">雷达图</div>
+                    <div class="fontclass">.icon-leidatu</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-shaloutu"></i>
+                    <div class="name">漏斗图</div>
+                    <div class="fontclass">.icon-shaloutu</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-zhexiantu"></i>
+                    <div class="name">折线图</div>
+                    <div class="fontclass">.icon-zhexiantu</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-dashujufenxi"></i>
+                    <div class="name">大数据分析</div>
+                    <div class="fontclass">.icon-dashujufenxi</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-zuzhiheguanlitubiao-"></i>
+                    <div class="name">大数据 big data</div>
+                    <div class="fontclass">.icon-zuzhiheguanlitubiao-</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-bingzhuangtu"></i>
+                    <div class="name">饼状图2</div>
+                    <div class="fontclass">.icon-bingzhuangtu</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-bingzhuangtu1"></i>
+                    <div class="name">饼状图1</div>
+                    <div class="fontclass">.icon-bingzhuangtu1</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-zhexiantux"></i>
+                    <div class="name">折线图@2x</div>
+                    <div class="fontclass">.icon-zhexiantux</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon--"></i>
+                    <div class="name">饼状图</div>
+                    <div class="fontclass">.icon--</div>
+                </li>
+            
+        </ul>
+
+        <h2 id="font-class-">font-class引用</h2>
+        <hr>
+
+        <p>font-class是unicode使用方式的一种变种，主要是解决unicode书写不直观，语意不明确的问题。</p>
+        <p>与unicode使用方式相比，具有如下特点：</p>
+        <ul>
+        <li>兼容性良好，支持ie8+，及所有现代浏览器。</li>
+        <li>相比于unicode语意明确，书写更直观。可以很容易分辨这个icon是什么。</li>
+        <li>因为使用class来定义图标，所以当要替换图标时，只需要修改class里面的unicode引用。</li>
+        <li>不过因为本质上还是使用的字体，所以多色图标还是不支持的。</li>
+        </ul>
+        <p>使用步骤如下：</p>
+        <h3 id="-fontclass-">第一步：引入项目下面生成的fontclass代码：</h3>
+
+
+        <pre><code class="lang-js hljs javascript"><span class="hljs-comment">&lt;link rel="stylesheet" type="text/css" href="./iconfont.css"&gt;</span></code></pre>
+        <h3 id="-">第二步：挑选相应图标并获取类名，应用于页面：</h3>
+        <pre><code class="lang-css hljs">&lt;<span class="hljs-selector-tag">i</span> <span class="hljs-selector-tag">class</span>="<span class="hljs-selector-tag">iconfont</span> <span class="hljs-selector-tag">icon-xxx</span>"&gt;&lt;/<span class="hljs-selector-tag">i</span>&gt;</code></pre>
+        <blockquote>
+        <p>"iconfont"是你项目下的font-family。可以通过编辑项目查看，默认是"iconfont"。</p>
+        </blockquote>
+    </div>
+</body>
+</html>
