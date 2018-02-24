@@ -80,8 +80,13 @@
         }
       };
     },
+    create() {
+    },
     mounted() {
       this.calculatePath();
+      $("#form").click( ()=> {
+        console.log(this.form);
+      });
     },
     methods: {
       getScales() {
