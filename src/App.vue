@@ -20,4 +20,14 @@ export default {
   img{border:0;vertical-align:middle}
   table{border-collapse:collapse;border-spacing:0}
   p{word-wrap:break-word}
+  table {
+    display: table;
+    border-collapse: separate;
+    border-spacing: 2px;
+    border-color: grey;
+  }
+  td, th {
+    padding: 0;
+    display: table-cell;
+  }
 </style>

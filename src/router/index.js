@@ -4,6 +4,7 @@ import Bigdata from '@/components/bigdata'
 import Table from '@/components/d3/table'
 import Graph from '@/components/d3/graph'
 import Form from '@/components/d3/form'
+import ForTable from '@/components/forTable/forTable'
 
 Vue.use(Router)
 
@@ -28,6 +29,10 @@ export default new Router({
           path: 'graph',
           name: 'Graph' ,
           component: Graph
+        },{
+          path: 'for',
+          name: 'ForTable' ,
+          component: ForTable
         }
       ]
     }

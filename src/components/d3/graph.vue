@@ -80,9 +80,25 @@
         }
       };
     },
-    create() {
+    beforeCreate(){
+      console.log(0)
+    },
+    created() {
+      // let arr = [1,2,3,4,5];
+      // console.log(arr.includes(1,2));
+      // var data = [1, 2, 3, 4];
+      //
+      // var arrayOfSquares = data.map(function (item) {
+      //   return item * item;
+      // });
+      console.log(this.$store.state.mse);
+      this.$store.commit("showUserName");
+    },
+    beforeMount(){
+      console.log(2)
     },
     mounted() {
+      console.log(3)
       this.calculatePath();
       $("#form").click( ()=> {
         console.log(this.form);

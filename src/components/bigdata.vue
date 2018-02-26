@@ -4,6 +4,7 @@
       <el-menu-item index="/table">展示</el-menu-item>
       <el-menu-item index="/form">SQL</el-menu-item>
       <el-menu-item index="/graph">图形</el-menu-item>
+      <el-menu-item index="/for">表格</el-menu-item>
     </el-menu>
     <div class="bujuBigdata"></div>
     <router-view/>
