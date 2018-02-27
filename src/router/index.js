@@ -5,6 +5,7 @@ import Table from '@/components/d3/table'
 import Graph from '@/components/d3/graph'
 import Form from '@/components/d3/form'
 import ForTable from '@/components/forTable/forTable'
+import TestCanvas from '@/components/testCanvas/testCanvas'
 
 Vue.use(Router)
 
@@ -33,6 +34,10 @@ export default new Router({
           path: 'for',
           name: 'ForTable' ,
           component: ForTable
+        },{
+          path: 'testCanvas',
+          name: 'TestCanvas' ,
+          component: TestCanvas
         }
       ]
     }

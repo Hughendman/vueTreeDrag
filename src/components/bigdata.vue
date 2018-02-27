@@ -5,6 +5,7 @@
       <el-menu-item index="/form">SQL</el-menu-item>
       <el-menu-item index="/graph">图形</el-menu-item>
       <el-menu-item index="/for">表格</el-menu-item>
+      <el-menu-item index="/testCanvas">Canvas</el-menu-item>
     </el-menu>
     <div class="bujuBigdata"></div>
     <router-view/>
@@ -21,7 +22,7 @@ export default {
     }
   },
   created (){
-    console.log(chackName("yin","匹配"))
+    // console.log(chackName("yin","匹配"))
 
   },
   methods: {
